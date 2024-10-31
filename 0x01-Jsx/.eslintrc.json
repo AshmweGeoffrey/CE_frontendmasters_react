@@ -6,6 +6,11 @@
     "plugin:jsx-a11y/recommended",
     "plugin:prettier/recommended"
   ],
+  "rules": {
+    "react/prop-types": 0,
+    "react/react-in-jsx-scope": 0
+  },
+  "plugins": ["react", "import", "jsx-a11y"],
   "env": {
 	  "es6":true,
     "browser": true,
@@ -15,8 +20,15 @@
     "ecmaVersion": 12,
     "sourceType": "module"
   },
-  "rules": {
-    // You can specify custom rules here if needed
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx"]
+      }
+    }
   }
 }
 
