@@ -9,4 +9,5 @@ const Pet = (props) => {
     </div>
   );
 };
+
 export default Pet;
